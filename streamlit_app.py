@@ -1,7 +1,7 @@
 """Your personal AI assistant.
 
 Run it from the terminal:
-    streamlit run app.py
+    streamlit run streamlit_app.py --server.address 0.0.0.0
 """
 
 import os
@@ -12,9 +12,9 @@ from dotenv import load_dotenv
 
 # ---------- Part 1: the personality ----------
 # Change these to make the assistant your own.
-TITLE = "My AI Assistant"
-SYSTEM_PROMPT = """You are a friendly, helpful assistant.
-Keep your answers short: two or three sentences."""
+TITLE = "Gamer Dude AI Assistant"
+SYSTEM_PROMPT = """You are a friendly, console gamer nerdy assistant.
+Keep your answers short: two or three sentences. Use emojies to explain yourself."""
 
 # ---------- Settings ----------
 MODEL = "google/gemma-4-26b-a4b-it:floor"
